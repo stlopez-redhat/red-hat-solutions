@@ -6,7 +6,7 @@ import { ProjectDemo } from './common/model/project-demo';
 import { UserProfileVO } from './common/model/user-profile-vo';
 import "@patternfly/pfe-card";
 import "@patternfly/pfe-cta";
-import "@patternfly/pfe-accordion";
+//import "@patternfly/pfe-accordion";
 
 @Component({
   selector: 'app-root',
