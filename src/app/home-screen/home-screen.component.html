@@ -63,9 +63,11 @@
     </div>
     <!-- <div fxFlex="5"></div> -->
   </div>
-  <div fxLayout='row' fxLayoutGap='20px' id="footer" fxLayoutAlign="center center">
-    <span *ngFor="let tech of projectTech" style="height: 40px;">
-      <img src="{{tech.imgUrl}}">
-    </span>
-  </div>
+  <pfe-cta slot="pfe-card--footer">
+    <div fxLayout='row' fxLayoutGap='20px' id="footer" fxLayoutAlign="center center">
+      <span *ngFor="let tech of projectTech" style="height: 40px;">
+        <img src="{{tech.imgUrl}}">
+      </span>
+    </div>
+  </pfe-cta>
 </div>
