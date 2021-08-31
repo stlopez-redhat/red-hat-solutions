@@ -191,7 +191,7 @@ $mat-accent: (
 $theme-accent: mat-palette($mat-accent, main, lighter, darker);
 
 body {
-  --warn-color: #cc0000;
+  --warn-color: #ee0000;
   --warn-lighter-color: #f0b3b3;
   --warn-darker-color: #b90000;
   --text-warn-color: #{$light-primary-text};
@@ -200,10 +200,10 @@ body {
 }
 
 $mat-warn: (
-  main: #cc0000,
+  main: #ee0000,
   lighter: #f0b3b3,
   darker: #b90000,
-  200: #cc0000, // For slide toggle,
+  200: #ee0000, // For slide toggle,
   contrast : (
     main: $light-primary-text,
     lighter: $dark-primary-text,
