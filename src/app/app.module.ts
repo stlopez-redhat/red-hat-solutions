@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MaterialModule } from '../material-module';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ClientPaymentComponent } from './client-payment/client-payment.component';
 import { TrasactionProgressComponent } from './trasaction-progress/trasaction-progress.component';
 import { TrasactionTrackingComponent } from './trasaction-tracking/trasaction-tracking.component';
@@ -42,10 +42,11 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     BrowserModule,
     AppRoutingModule,
-    // FlexLayoutModule,
+    FlexLayoutModule,
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
+    NoopAnimationsModule,
     HttpClientModule  ],
   entryComponents: [
     HomeScreenComponent

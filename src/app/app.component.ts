@@ -4,8 +4,8 @@ import { UserProfile } from './common/model/user-profile';
 import { ProductsDemosService } from './_services/products-demos.service';
 import { ProjectDemo } from './common/model/project-demo';
 import { UserProfileVO } from './common/model/user-profile-vo';
-import "@patternfly/pfe-card";
-import "@patternfly/pfe-cta";
+// import "@patternfly/pfe-card";
+// import "@patternfly/pfe-cta";
 //import "@patternfly/pfe-accordion";
 
 @Component({
@@ -21,9 +21,9 @@ export class AppComponent implements OnInit {
 
   constructor(private userDataService: UserDataService, private productsDemosService: ProductsDemosService) { }
 
-  ngAfterViewInit() {
-    this.accordion.nativeElement.toggle(0);
-  }
+  // ngAfterViewInit() {
+  //   this.accordion.nativeElement.toggle(0);
+  // }
 
   ngOnInit(): void {
     this.userDataService.getUser()

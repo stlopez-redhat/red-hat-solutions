@@ -5,6 +5,7 @@ export class ProjectDemoVO implements ProjectDemo {
   name = '';
   title = '';
   desc = '';
+  demoImg = '';
   redhatTechId = Array<number>();
   productBenefitsId = Array<number>();
 }

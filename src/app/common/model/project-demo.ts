@@ -3,6 +3,7 @@ export interface ProjectDemo {
   name: string;
   title: string;
   desc: string;
+  demoImg: string;
   redhatTechId: number[];
   productBenefitsId: number[];
 }

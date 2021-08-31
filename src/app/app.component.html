@@ -2,7 +2,6 @@
 
 <nav class="app-toolbar menuShadow">
   <mat-toolbar color="primary">
-    <!-- <img class="redhat-logo" src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--200.png" style="margin:0;width: 135px;" title="Red Hat"/> -->
     <img src="./assets/img/logo-white-letters.png" style="margin:0;width: 135px; color:white;" title="Red Hat" />&nbsp;
     <span flex></span>
     <div fxShow="true" fxHide.lt-md="true" style="margin-left: auto;">
@@ -21,11 +20,36 @@
       </button>
     </div>
   </mat-toolbar>
-</nav>
+  </nav>
 
-<pfe-card color="lightest" border>
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
-</pfe-card>
+  <!-- <div class="pf-c-page" id="card-view-example">
+    <div class="pf-c-page__sidebar">
+      <div class="pf-c-page__sidebar-body">
+        <nav class="pf-c-nav" id="card-view-example-primary-nav" aria-label="Global">
+          <ul class="pf-c-nav__list">
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link pf-m-current" aria-current="page">System Panel</a>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link">Policy</a>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link">Authentication</a>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link">Network Services</a>
+            </li>
+            <li class="pf-c-nav__item">
+              <a href="#" class="pf-c-nav__link">Server</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div> -->
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
 <footer></footer>

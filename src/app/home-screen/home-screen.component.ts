@@ -5,12 +5,44 @@ import { ProjectDemo } from '../common/model/project-demo';
 import { UserProfile } from '../common/model/user-profile';
 import { UserDataService } from '../_services/user-data.service';
 import { RedhatTechnologies } from '../../app/common/model/redhat-technologies';
-import { RedhatTech } from '../common/model/redhat-tech';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-home-screen',
   templateUrl: './home-screen.component.html',
-  styleUrls: ['./home-screen.component.scss']
+  styleUrls: ['./home-screen.component.scss'],
+  animations: [
+    trigger('flyInLeft', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateX(-100%)' }),
+        animate(2000)
+      ]),
+      transition('* => void', [
+        animate(2000, style({ transform: 'translateX(100%)' }))
+      ])
+    ]),
+    trigger('flyInRight', [
+      state('in', style({ transform: 'translateX(0)' })),
+      // transition(':enter', [
+      //   style({ height: '0px', 'padding-top': '0', 'padding-bottom': '0'}),  // initial
+      //   animate('0.5s',
+      //     style({ height: '*', 'padding-top': '*', 'padding-bottom': '*'}))  // final
+      // ]),
+      // transition(':leave', [
+      //   style({ height: '*', 'padding-top': '*', 'padding-bottom': '*', opacity: 1}),  // initial
+      //   animate('0.5s',
+      //     style({ height: '0px', 'padding-top': '0', 'padding-bottom': '0', opacity: 0}))  // final
+      // ])
+      transition(':enter', [
+        style({ transform: 'translateX(100%)' }),
+        animate(2000)
+      ]),
+      transition('* => void', [
+        animate(2000, style({ transform: 'translateX(100%)' }))
+      ]),
+    ])
+  ]
 })
 export class HomeScreenComponent implements OnInit {
   @ViewChild('panel', { read: ElementRef }) public panel!: ElementRef<any>;
