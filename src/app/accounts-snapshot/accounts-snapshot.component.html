@@ -7,7 +7,10 @@
     <img src="../../assets/img/flowchart.gif" width="600" height="500"/>
   </mat-drawer>
   <mat-drawer-content>
-    <button mat-raised-button (click)="drawer.toggle()">View Animation</button>
+    <button mat-raised-button (click)="drawer.toggle()" style="color: #004080;">
+      Learn More
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
     <div fxLayoutAlign="center center" id="content">
       Account Summary
     </div>
