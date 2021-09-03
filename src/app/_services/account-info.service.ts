@@ -28,12 +28,13 @@ export class AccountInfoService {
   public next = '';
   public last = '';
   private userId = '';
-  private bankUrl = '/ui/';
-  private backEndUrl = '/';
+  private bankUrl = 'http://localhost:9093/';
+  private backEndUrl = 'http://localhost:9093/';
   // httpOptions.headers =  httpOptions.headers.set('Authorization', 'my-new-auth-token');
 constructor(private http: HttpClient) { }
 
   getObAccounts(userId: string): Observable<ObAccounts>{
+    console.log(this.backEndUrl + 'accounts?accountHolderId=' + userId);
     this.userId = userId;
       return this.http.get<ObAccounts>(this.backEndUrl + 'accounts?accountHolderId=' + userId, httpOptions);
   // getObAccounts() {

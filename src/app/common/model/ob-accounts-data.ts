@@ -1,4 +1,5 @@
 export class ObAccountsData {
+  AccountHolderId = '';
   AccountId = '';
   Status = false;
   StatusUpdateDateTime = '';

@@ -1,9 +1,20 @@
+import { ObAccount } from './ob-account';
 import { ObAccountsData } from './ob-accounts-data';
 
 export class ObAccounts {
   Data = {
     Accounts: Array<ObAccountsData>()
   };
+
+  // AccountId = '';
+  // Status = false;
+  // StatusUpdateDateTime = '';
+  // Currency = '';
+  // AccountType = '';
+  // AccountSubType = '';
+  // Nickname = '';
+  // OpeningDate = '';
+  // Account = new Array<ObAccount>();
 
   // AccountId: string;
   // Status: boolean;

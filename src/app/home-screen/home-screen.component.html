@@ -27,14 +27,15 @@
   <div id="content2" fxLayoutAlign="center center">
     <p>{{productDemo.desc}}</p>
   </div>
-<div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center" class="scrolling-wrapper" *ngIf="productDemos" >
+  <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center" class="scrolling-wrapper" *ngIf="productDemos">
     <!-- <div fxFlex="5"></div> -->
     <div fxFlex="5" fxLayoutAlign="center center">
       <!-- <button mat-mini-fab color="primary" (click)="onPreviousSearchPosition()">
         <mat-icon>chevron_left</mat-icon>
       </button> -->
     </div>
-    <div fxFlex="90" #panel style="overflow-x:scroll; height: 440px; padding-top: 10px;" fxLayoutAlign="center center" fxLayoutGap="5px">
+    <div fxFlex="90" #panel style="overflow-x:scroll; height: 440px; padding-top: 10px;" fxLayoutAlign="center center"
+      fxLayoutGap="5px">
       <!-- <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport" #panel> -->
       <div *ngFor="let subscription of projectCards" class="card">
         <mat-card>
@@ -44,12 +45,10 @@
           </mat-card-header>
           <mat-card-content>
             <div *ngFor="let feature of subscription.featureList">
-              <span style="color: #ffffff" fxLayoutAlign="start center" >
-                <div fxLayout="row">
-                  <div fxFlex="10">
-                    <mat-icon>check_circle</mat-icon>
-                  </div>
-                  <div class="div-word-wrap">&nbsp; {{feature.desc}}</div>
+              <span style="color: #ffffff" fxLayoutAlign="start center">
+                <div fxLayout="row" class="div-word-wrap">
+                  <mat-icon>check_circle</mat-icon>
+                  {{feature.desc}}
                 </div>
               </span>
             </div>

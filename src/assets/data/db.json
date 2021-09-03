@@ -133,9 +133,9 @@
     "Test 1",
     "Test 2"
   ],
-  "Accounts": [
+  "accounts": [
     {
-      "AccountHolderId": "11111",
+      "accountHolderId": "11111",
       "AccountId": "22289",
       "Status": "Enabled",
       "StatusUpdateDateTime": "2019-01-01T06:06:06+00:00",
